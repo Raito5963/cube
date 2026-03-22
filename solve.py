@@ -126,9 +126,9 @@ class Search:
                 return ' '.join(self.solution)
         return None
     
-    def start_search_kociemba(self, max_length=20, timeout=30):
+    def start_search_kociemba(self, max_length=20, timeout=100):
         self.best_solution = None
-        self.start_search_kociemba_ph1(max_length=max_length, timeout=timeout)
+        self.start_search_kociemba_ph1(max_length, timeout)
         return self.best_solution
 
     def start_search_kociemba_ph1(self, max_length, timeout):
